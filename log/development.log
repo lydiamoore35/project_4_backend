@@ -1,2 +1,110 @@
   [1m[35m (160.5ms)[0m  [1m[35mCREATE DATABASE "project_4_api_development" ENCODING = 'unicode'[0m
   [1m[35m (63.8ms)[0m  [1m[35mCREATE DATABASE "project_4_api_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2020-12-07 20:28:29 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.6ms | Allocations: 469)
+Completed 200 OK in 24ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 2528)
+
+
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE DATABASE "project_4_api_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "project_4_api_test" ENCODING = 'unicode'[0m
+  [1m[35m (26.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4824157005563670075)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateChecklists (20201208035117)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "checklists" ("id" bigserial primary key, "task" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201208035117"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-08 03:58:10.971816"], ["updated_at", "2020-12-08 03:58:10.971816"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4824157005563670075)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChecklist Create (1.5ms)[0m  [1m[32mINSERT INTO "checklists" ("task", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["task", "decorate the Christmas tree"], ["created_at", "2020-12-08 04:05:37.655993"], ["updated_at", "2020-12-08 04:05:37.655993"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChecklist Create (0.3ms)[0m  [1m[32mINSERT INTO "checklists" ("task", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["task", "hang lights on the front of the house"], ["created_at", "2020-12-08 04:05:37.661081"], ["updated_at", "2020-12-08 04:05:37.661081"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChecklist Create (0.1ms)[0m  [1m[32mINSERT INTO "checklists" ("task", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["task", "buy Christmas presents for littles"], ["created_at", "2020-12-08 04:05:37.663758"], ["updated_at", "2020-12-08 04:05:37.663758"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-12-07 21:05:59 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.8ms | Allocations: 306)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 1507)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-12-07 21:05:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-12-07 21:06:01 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.8ms | Allocations: 196)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 723)
+
+
+Started GET "/" for ::1 at 2020-12-07 21:06:02 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 8)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 218)
+
+
+Started GET "/checklists" for ::1 at 2020-12-07 21:07:00 -0700
+Processing by ChecklistsController#index as HTML
+  [1m[36mChecklist Load (1.9ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 8.4ms | ActiveRecord: 8.9ms | Allocations: 4539)
+
+
+Started POST "/checklists" for ::1 at 2020-12-07 21:10:20 -0700
+Processing by ChecklistsController#create as */*
+  Parameters: {"task"=>"brainstorm dinner ideas for Christmas Eve", "checklist"=>{"task"=>"brainstorm dinner ideas for Christmas Eve"}}
+  [1m[35m (4.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checklists_controller.rb:20:in `create'
+  [1m[36mChecklist Create (7.0ms)[0m  [1m[32mINSERT INTO "checklists" ("task", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["task", "brainstorm dinner ideas for Christmas Eve"], ["created_at", "2020-12-08 04:10:20.602085"], ["updated_at", "2020-12-08 04:10:20.602085"]]
+  ↳ app/controllers/checklists_controller.rb:20:in `create'
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checklists_controller.rb:20:in `create'
+Completed 201 Created in 35ms (Views: 1.0ms | ActiveRecord: 13.6ms | Allocations: 2749)
+
+
+Started GET "/checklists" for ::1 at 2020-12-07 21:10:29 -0700
+Processing by ChecklistsController#index as HTML
+  [1m[36mChecklist Load (0.3ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1236)
+
+

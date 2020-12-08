@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Checklist.create([{task: 'decorate the Christmas tree'}, {task: 'hang lights on the front of the house'}, {task: 'buy Christmas presents for littles'}])
+
+puts "Seeded database"
