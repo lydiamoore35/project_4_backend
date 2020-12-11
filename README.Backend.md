@@ -21,7 +21,7 @@
 - create seed data and seed the database
 - confirm that I had full CRUD with Postman
 - connect backend to frontend with fetch request 
-- adjust for CORS so that frontend can consume the backend api
+- configure CORS so that only my frontend can consume the backend api
 - deployed on Heroku 
 
 ### Unsolved Problems
