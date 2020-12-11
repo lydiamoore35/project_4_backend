@@ -440,3 +440,331 @@ puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.7) lib/puma/server.rb:472:in `process_client'
 puma (4.3.7) lib/puma/server.rb:328:in `block in run'
 puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/checklists" for ::1 at 2020-12-10 16:03:04 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (1.1ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 5.1ms | ActiveRecord: 5.3ms | Allocations: 4590)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:03:21 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.3ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:03:42 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.7ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.7ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:04:16 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.5ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 3.8ms | Allocations: 4590)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:06:59 -0700
+Processing by ChecklistsController#index as HTML
+  [1m[36mChecklist Load (0.3ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1257)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-12-10 16:07:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/checklists" for ::1 at 2020-12-10 16:07:08 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.3ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1273)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:07:40 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.6ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:07:52 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.3ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:08:01 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.6ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.6ms | Allocations: 1239)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:08:16 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.6ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 5.3ms | Allocations: 4590)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:08:20 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.3ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:11:23 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (1.1ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 7.5ms | ActiveRecord: 6.3ms | Allocations: 4590)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:11:27 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.7ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.7ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:11:28 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.2ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:11:29 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.3ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:12:02 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.4ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1239)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:12:26 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.3ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1239)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:19:23 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (3.1ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 3.1ms | Allocations: 1297)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:19:42 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (1.4ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.4ms | Allocations: 1239)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:21:13 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.4ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:25:25 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (1.8ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 33ms (Views: 23.0ms | ActiveRecord: 1.8ms | Allocations: 1239)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:26:02 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.5ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 5.5ms | ActiveRecord: 4.2ms | Allocations: 4590)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:28:37 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.9ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.9ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:48:06 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (1.3ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 1.3ms | Allocations: 1309)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:51:46 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.8ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.8ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 16:51:47 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.7ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.7ms | Allocations: 1239)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:04:35 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (2.1ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 34ms (Views: 22.9ms | ActiveRecord: 2.1ms | Allocations: 1309)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:15:05 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (2.5ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 2.5ms | Allocations: 1297)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:22:37 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.4ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 5.4ms | ActiveRecord: 6.6ms | Allocations: 4590)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:30:23 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (2.6ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 12.6ms | ActiveRecord: 2.6ms | Allocations: 1309)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:31:40 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.2ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:32:08 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (1.5ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 1.5ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:32:38 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.6ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 11.0ms | ActiveRecord: 17.2ms | Allocations: 4590)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:33:45 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.4ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:38:48 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.9ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.9ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:38:48 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.4ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1239)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:40:12 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.3ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:41:30 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.4ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1257)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:42:37 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.6ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.6ms | Allocations: 1239)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:53:48 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (2.1ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 35ms (Views: 23.9ms | ActiveRecord: 2.1ms | Allocations: 1297)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:55:16 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.8ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.8ms | Allocations: 1239)
+
+
+Started GET "/checklists" for ::1 at 2020-12-10 17:55:35 -0700
+Processing by ChecklistsController#index as */*
+  [1m[36mChecklist Load (0.4ms)[0m  [1m[34mSELECT "checklists".* FROM "checklists"[0m
+  ↳ app/controllers/checklists_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 1239)
+
+
