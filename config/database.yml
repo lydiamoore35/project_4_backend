@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
-  database: project_4_api_production
-  username: project_4_api
-  password: <%= ENV['PROJECT_4_API_DATABASE_PASSWORD'] %>
+  # database: project_4_api_production
+  # username: project_4_api
+  # password: 
+  
+  url: <%= ENV['DATABASE_URL'] %>
