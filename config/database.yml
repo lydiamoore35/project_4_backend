@@ -83,5 +83,4 @@ production:
   # database: project_4_api_production
   # username: project_4_api
   # password: 
-  
   url: <%= ENV['DATABASE_URL'] %>
